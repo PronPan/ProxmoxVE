@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-set -x  # This will print each command before it runs.
-exec > >(tee -a /var/log/npm_update.log) 2>&1  # This captures both stdout and stderr into a log file and displays it.
 
 echo "[INFO] Sourcing external functions..."
 source <(curl -s https://raw.githubusercontent.com/PronPan/ProxmoxVE/main/misc/build.func)

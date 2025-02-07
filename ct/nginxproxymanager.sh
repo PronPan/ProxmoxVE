@@ -106,7 +106,9 @@ function update_script() {
   mkdir -p /app/global /app/frontend/images
   cp -r backend/* /app
   cp -r global/* /app/global
-  python3 -m pip install --no-cache-dir certbot-dns-cloudflare &>/dev/null
+  if ! python3 -m pip show certbot-dns-cloudflare &>/dev/null; then
+    python3 -m pip install --no-cache-dir certbot-dns-cloudflare --break-system-packages &>/dev/null
+  fi
   msg_ok "Setup Enviroment"
 
   msg_info "Building Frontend"

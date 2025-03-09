@@ -1,7 +1,7 @@
 <div align="center">
   <p align="center">
     <a href="#">
-      <img src="https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/images/logo.png" height="100px" />
+      <img src="https://raw.githubusercontent.com/PronPan/ProxmoxVE/main/misc/images/logo.png" height="100px" />
     </a>
   </p>
 </div>
